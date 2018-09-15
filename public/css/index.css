@@ -1,0 +1,362 @@
+body{
+    background-color: #444444;
+    margin-top: 20px;
+}
+#lobby{
+    background: #e2e1e1;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 20px;
+}
+#player-info{
+    background: #e2e1e1;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius:10px;
+    padding: 20px;
+}
+#messageArea{
+    display: none;
+}
+.poker-table {
+    width: 800px;
+    height: 700px;
+    position: absolute;
+    background: #2f2e2e;
+    z-index: 10;
+    color: #e2e1e1;
+    text-align: center;
+    border-radius: 10px;
+    display: none;
+    -webkit-box-shadow: 10px 10px 20px -2px rgba(0,0,0,0.29);
+    -moz-box-shadow: 10px 10px 20px -2px rgba(0,0,0,0.29);
+    box-shadow: 10px 10px 20px -2px rgba(0,0,0,0.29);   
+}
+.close-table-btn{
+    cursor:pointer;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    border-radius: 6px;
+    top:4px;
+    right:4px;
+    background: #2ebdfc;
+    z-index: 9999;
+    color:#444;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;  
+}
+.poker-tables{
+    border-radius: 10px;
+    width:800px;
+    height: 400px;
+}
+.room-chat{
+    position: absolute;
+    z-index: 999;
+    bottom: 55px;
+    left:5px;
+    width: 350px;
+    height: 100px;
+    background: #444;
+    overflow-y: scroll;
+    text-align: left;
+    border-top-left-radius:5px;
+}
+.room-textArea{
+    position: absolute;
+    z-index: 999;
+    bottom: 5px;
+    left:5px;
+    width: 250px;
+    height: 50px;
+    background: #fff;
+    overflow-y: scroll;
+    overflow-x:hidden;
+    color:#000;
+    resize: none;
+    border-bottom-left-radius:5px;
+}
+.room-sendButton{
+    position: absolute;
+    z-index: 999;
+    bottom: 5px;
+    left:255px;
+    width: 100px;
+    height: 50px;
+    background: #2ebdfc;
+    cursor: pointer;
+    color:#444;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+}
+.betButton{
+    position: absolute;
+    z-index: 999;
+    bottom: 100px;
+    right:10px;
+    width: 100px;
+    height: 50px;
+    background: #599e00;
+    cursor: pointer;
+    color:#e2e1e1;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+}
+.callButton{
+    position: absolute;
+    z-index: 999;
+    bottom: 100px;
+    right:120px;
+    width: 100px;
+    height: 50px;
+    background: #f1c624;
+    cursor: pointer;
+    color:#e2e1e1;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+}
+.foldButton{
+    position: absolute;
+    z-index: 999;
+    bottom: 100px;
+    right:230px;
+    width: 100px;
+    height: 50px;
+    background: red;
+    cursor: pointer;
+    color:#e2e1e1;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+}
+.betArea{
+    position: absolute;
+    z-index: 999;
+    bottom: 45px;
+    right:10px;
+    width: 100px;
+    height: 50px;
+    padding-left: 10px;
+    line-height: 50px;
+    background: #599e00;
+    cursor: pointer;
+    color:#e2e1e1;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+}
+.table-bg{
+    position: absolute;
+    z-index: 699;
+    top: 40px;
+    right:5px;
+    left:5px;
+    height: 500px;
+    width:790px;
+    padding-left: 10px;
+    line-height: 50px;
+    background: url('../img/poker_table7.png');
+    background-size: 790px 500px;
+    color:#e2e1e1;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+}
+.table-name{
+    position: absolute;
+    z-index: 700;
+    color:#e2e1e1;
+    opacity: 0.5;
+    font-size:50px;
+    top: 200px;
+    height: 70px;
+    width: 760;
+    text-align:center;
+     right:20px;
+    left:20px;
+}
+.table-seat{
+     position: absolute;
+    z-index: 700;
+    color:#000;
+    font-size:50px;
+    height: 125px;
+    width: 150px;
+    background: #000;
+    text-align:center;
+}
+.name-placeholder{
+    width:100%;
+    height:25px;
+    background: #2f2e2e;
+    color:#e2e1e1;
+    font-size:20px;
+    line-height: 25px;
+    z-index:703;
+    position: absolute; 
+    bottom: 0px;
+}
+.chips-placeholder{
+    width:100%;
+    height:25px;
+    background: #2f2e2e;
+    color:#e2e1e1;
+    font-size:20px;
+    line-height: 25px;
+    z-index:701;
+    position: absolute; 
+    top: 0px;
+}
+.firstCard-placeholder{
+    width:75px;
+    height:100px;
+    font-size:10px;
+    background: #f1c624;
+    z-index:702;
+    position: absolute;
+    left:0px;
+    top:25px;
+    background-size: cover;
+}
+.secondCard-placeholder{
+    width:75px;
+    height:100px;
+    font-size:10px;
+    background: #f1c624;
+    z-index:701;
+    position: absolute;
+    right:0px;
+    top:25px;
+}
+.seat1{
+    bottom: 5px;
+    right:190px;
+}
+.seat2{
+    bottom: 5px;
+    left:190px;
+}
+.seat3{
+    bottom: 200px;
+    left:5px;
+}
+.seat4{
+    top: 5px;
+    left:190px;
+}
+.seat5{
+    top: 5px;
+    right:190px;
+}
+.seat6{
+    bottom: 200px;
+    right:5px;
+}
+.bet-placeholder{
+    width:100px;
+    height:30px;
+    background: #599e00;
+    line-height: 30px;
+}
+.bet1{
+    bottom:135px;
+    right:215px;
+    position: absolute;
+    z-index: 700;
+}
+.bet2{
+    bottom:135px;
+    left:215px;
+    position: absolute;
+    z-index: 700;
+}
+.bet3{
+    bottom:165px;
+    left:30px;
+    position: absolute;
+    z-index: 700;
+}
+.bet4{
+    top:135px;
+    left:215px;
+    position: absolute;
+    z-index: 700;
+}
+.bet5{
+    top:135px;
+    right:215px;
+    position: absolute;
+    z-index: 700;
+}
+.bet6{
+    bottom:165px;
+    right:30px;
+    position: absolute;
+    z-index: 700;
+}
+.pot-placeholder{
+    top:130px;
+    right:340px;
+    color: #2f2e2e;
+    position: absolute;
+    z-index: 700;
+    width:110px;
+    height:30px;
+    font-size: 25px;
+    line-height: 30px;
+}
+.active-player{
+    display: none;
+}
+.board{
+    width: 320px;
+    height: 90px;
+    z-index: 703;
+    position: absolute;
+    left: 250px;
+    top: 220px;
+}
+.board1-placeholder{
+    width:60px;
+    height:90px;
+    z-index:708;
+    position: absolute;
+    left:0px;
+    background-size: cover;
+}
+.board2-placeholder{
+    width:60px;
+    height:90px;
+    z-index:708;
+    position: absolute;
+    left:65px;
+    background-size: cover;
+}
+.board3-placeholder{
+    width:60px;
+    height:90px;
+    z-index:708;
+    position: absolute;
+    left:130px;
+    background-size: cover;
+}
+.board4-placeholder{
+    width:60px;
+    height:90px;
+    z-index:708;
+    position: absolute;
+    left:195px;
+    background-size: cover;
+}
+.board5-placeholder{
+    width:60px;
+    height:90px;
+    z-index:708;
+    position: absolute;
+    left:260px;
+    background-size: cover;
+}

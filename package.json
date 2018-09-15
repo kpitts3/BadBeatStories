@@ -1,0 +1,37 @@
+{
+  "name": "passport_mysql_express_auth",
+  "description": "ExpressJs + Passport.js + MySQL Authentication",
+  "version": "1.0.0",
+  "author": "",
+  "main": "app.js",
+  "dependencies": {
+    "bcrypt-nodejs": "*",
+    "body-parser": "*",
+    "bookshelf": "*",
+    "connect-redis": "^3.3.3",
+    "cookie-parser": "*",
+    "eslint": "^5.6.0",
+    "express": "^4.16.3",
+    "express-session": "*",
+    "knex": "*",
+    "mariasql": "^0.2.6",
+    "mysql": "*",
+    "passport": "^0.4.0",
+    "passport-local": "*",
+    "passport.socketio": "^3.7.0",
+    "socket.io": "^2.1.1",
+    "socket.io-client": "^2.1.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kpitts3/BadBeatStories.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kpitts3/BadBeatStories/issues"
+  },
+  "homepage": "https://github.com/kpitts3/BadBeatStories#readme"
+}

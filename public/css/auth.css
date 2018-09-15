@@ -1,0 +1,76 @@
+body{
+    height: 100%;
+    background-color: rgb(110, 103, 103) !important;
+}
+#main-cont{
+    width: 100%;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+    background: transparent;
+    margin-top: 150px;
+}
+.fit-fixed{
+    max-width: 960px;
+    min-width: 200px;
+    margin: 0 auto;
+    background: transparent;
+}
+.login-cont{
+    max-width: 400px;
+    min-width: 200px;
+    margin: 0 auto;
+    background: transparent;
+}
+input[type=text], input[type=password],input[type=email]{
+    margin: 5px;
+    padding: 0 10px;
+    width: 60%;
+    height: 34px;
+    color: #404040;
+    background: #e2e1e1;
+    border: 3px solid;
+    border-color: #28BDFC;
+    border-radius: 2px;
+}
+input[type=text]:focus, input[type=password]:focus,input[type=email]:focus {
+    border-color: #7dc9e2;
+    outline-color: #e2e1e1;
+    outline-offset: 0;
+}
+.logbutton {
+    width: 90px;
+    height: 32px;
+    padding: 3px 5px;
+    font-size:12px;
+    font-weight:bold;
+    outline: none;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    color: #e2e1e1;
+    background: #28BDFC;
+    border: none;
+    margin: 0 auto;
+    font-family: 'WOL_Reg','Segoe UI',Tahoma,Helvetica,sans-serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.logbutton:hover {
+    text-decoration: none;
+    background: #007ead;
+}
+.logText{
+    color: #28BDFC;
+    font-family: 'WOL_Reg','Segoe UI',Tahoma,Helvetica,sans-serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.loginForm {
+    background: #e2e1e1;
+    padding: 10px;
+    text-align: center;
+    margin-top: 5px;
+    position: relative;
+    width: 100%;
+    letter-spacing: 1px;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+        <title>{{ title }}</title>
+        <link rel="stylesheet" type="text/css" href="/css/auth.css">
+   </head>
+   <body>
+   <div id="projectcanvas-img"></div>
+    <div id="main-cont">
+        <div class="login-cont">
+
+            <div class="loginForm">
+              <h2 class="logText">Register Form</h2>
+              <form method="post" action="/signup">
+                 {{if(typeof(errorMessage) !== 'undefined')}}
+                 <span>{{= errorMessage}}</span>
+                 <p>
+                    <input type="text" name="username" id="username"
+                       placeholder="username" required="true"/>
+                 </p>
+                 <p>
+
+                    <input type="password" name="password" id="password"
+                       placeholder="password" required="true"/>
+                 </p>
+                 <p>
+                    <input type="submit" name="signup" id="signup" value="Register" class="logbutton"/>
+                    <br><a href="/signin" title="sign in"><div class="logText">sign in</div></a>
+                 </p>
+              </form>
+            </div>
+        </div>
+    </div>
+   </body>
+</html>
